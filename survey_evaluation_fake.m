@@ -42,6 +42,8 @@ end
 PY(j)=length(find(kl1(:,j)<thres & kl2(:,j)<thres))/10000;
 end
 
+C1=[];
+C2=[];
 for i=1:10000
 xc(i,:)=dirichlet_sample(alpha0);
 concc(i)=0.92+0.08*rand;
