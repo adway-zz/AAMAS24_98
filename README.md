@@ -7,7 +7,10 @@ The functions PCM.m and SPM.m are used to run the Partywise Concentration Model 
 
 survey.m implements our survey model. It takes as input a complete election result and the survey extent, and it provides a projection of the number of seats that each party may win and total number of votes that each party can get.
 
-dir_posterior_SPM and dir_posterior_PCM are used to generate candidate outcomes, and estimate their Synthetic Dirichlet posterior likelihood, given the surveys, extent of surveys and Dirichlet Prior Parameters. Extent of surveys include fraction of districts covered and fraction of persons surveyed in each district.
+dir_posterior_SPM.m and dir_posterior_PCM.m are used to generate candidate outcomes, and estimate their Synthetic Dirichlet posterior likelihood, given the surveys, extent of surveys and Dirichlet Prior Parameters. Extent of surveys include fraction of districts covered and fraction of persons surveyed in each district.
 
+party_performance_dist.m is used to create distributions over possible performance by each party, in terms of vote and seat share, conditioned on the surveys
+
+survey_evaluation_genuine.mat, survey_evaluation_fake.mat and survey_evaluation_malicious.mat are used to estimate the average likelihood ratio of genuine, fake and malicious surveys, conditioned on the actual complete election results.
 
 
