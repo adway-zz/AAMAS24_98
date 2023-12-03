@@ -60,6 +60,8 @@ if (klc1+klc2<thres) C1=[C1;y1];C2=[C2;y2];
 end
 end
 
+C1=[];
+C2=[];
 for j=1:100
 for i=1:size(C1,1)
 y11=0.99*C1(i,:)+0.01*(1/K)*ones(1,K);
